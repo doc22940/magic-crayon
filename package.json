@@ -1,0 +1,8 @@
+{
+	"name": "stuartw-io-magic-crayon",
+	"version": "0.1.0",
+	"devDependencies": {
+		"grunt": "~0.4.2",
+		"grunt-contrib-requirejs": "~0.4.4"
+	}
+}

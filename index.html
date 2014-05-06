@@ -1,14 +1,33 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <link rel="stylesheet" type="text/css" href="style.css"/>
-    <script src="dom.js"></script>
-  </head>
-  <body>
-    <ul id="frames"></ul>
-    <canvas id="ui"></canvas>
-    <canvas id="drawing"></canvas>
-    <ul id="menu"></ul>
-    <script src="script.js"></script>
-  </body>
+	<head>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	</head>
+	<body>
+		<ul id="frames"></ul>
+
+		<canvas id="drawing"></canvas>
+		<canvas id="ui"></canvas>
+		
+		<ul id="menu"></ul>
+		
+		<!-- DEVEL -->
+		<script src="js/lib/require-2.1.11-min.js"></script>
+		<script>
+			require.config({
+				baseUrl: 'js'
+			});
+		</script>
+		<!-- /DEVEL -->
+		
+		<!-- PRODUCTION ->
+		<script src="build/app.js"></script>
+		<!- /PRODUCTION -->
+
+		<script>
+			require(['app/Application'], function(Application) {
+				(new Application()).run();
+			});
+		</script>
+	</body>
 </html>
