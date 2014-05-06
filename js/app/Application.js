@@ -6,6 +6,7 @@ define('app/Application', ['app/DrawingLayer', 'app/ControlLayer', 'app/EventMan
 
 		this.run = function() {
 			var drawing = new DrawingLayer(document.getElementById("drawing"), events);
+
 			drawing.init();
 
 			events.bind('drawable', function(segment) {

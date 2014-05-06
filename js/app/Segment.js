@@ -1,5 +1,5 @@
 define('app/Segment', function() {
-	
+
 	function Segment(x1, y1, x2, y2, color, width) {
 
 		this.x1 = function() {

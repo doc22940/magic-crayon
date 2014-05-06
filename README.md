@@ -23,5 +23,3 @@
     * Create new animation
     * Search animations
     * Delete animation
-
-  

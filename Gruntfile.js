@@ -1,5 +1,5 @@
 module.exports = function(grunt) {
-	
+
 	grunt.initConfig({
 		requirejs: {
 			compile: {
@@ -7,7 +7,7 @@ module.exports = function(grunt) {
 					baseUrl: "js",
 					mainConfigFile: "build.js",
 					include: "app/Application",
-					name: "lib/almond",
+					name: "lib/almond-0.2.9",
 					out: "build/app.js"
 				}
 			}

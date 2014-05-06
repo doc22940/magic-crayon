@@ -1,5 +1,5 @@
 define('core/array', function() {
-	
+
 	var array = {
 
 		each: function(arr, visitor) {

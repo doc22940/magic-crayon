@@ -7,10 +7,10 @@ define('app/ControlLayer', ['core/dom', 'app/Segment'], function(dom, Segment) {
 		var strokeColor = '#009';
 		var lastX;
 		var lastY;
-		
+
 		this.init = function() {
 			var self = this;
-			
+
 			dom.bind(elem, "mousemove", function(e) {
 				self.renderCursor(e.pageX, e.pageY);
 			});

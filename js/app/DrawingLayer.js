@@ -6,7 +6,6 @@ define('app/DrawingLayer', ['core/dom'], function(dom) {
 		var drawables = [];
 
 		this.init = function() {
-			
 			var self = this;
 
 			dom.bind(window, "resize", function() {
@@ -14,7 +13,6 @@ define('app/DrawingLayer', ['core/dom'], function(dom) {
 			});
 
 			this.resize();
-
 		};
 
 		this.add = function(drawable) {

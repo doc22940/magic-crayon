@@ -1,5 +1,5 @@
 define('app/EventManager', ['core/array'], function(array) {
-	
+
 	function EventManager() {
 
 		var map = {};
